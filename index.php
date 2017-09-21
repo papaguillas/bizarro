@@ -18,7 +18,7 @@
 */
 require 'vendor/autoload.php';
 $date = date('m/d/Y h:i:s a', time());
-$client = new Zelenin\Telegram\Bot\Api('297927337:AAHXURwcz2EK8rFMsssTn90t2iNLGTtJLMw'); // Set your access token
+$client = new Zelenin\Telegram\Bot\Api('403600276:AAHaO4z5j96pcSLNuXMyrrxjDqB8OXVn2cY'); // Set your access token
 $url = 'koreanbot.herokuapp.com/'; // URL RSS feed
 $update = json_decode(file_get_contents('php://input'));	
 try {
@@ -52,7 +52,7 @@ try {
 	      else if($update->message->text == '/cm52321')
     {
 		$response = $client->sendPhoto([
- 		'chat_id' => "-125893585",
+ 		'chat_id' => "",
  		'photo' => "AgADBAADoKoxGw6qoVMFy56u06YXwRg8qRkABKWgSQ0NLhp0dAEEAAEC"				
      	]);
     }	
@@ -159,7 +159,7 @@ try {
 		 }
 	    
 	   else if($update->message->text == '/patricio2000'){
-		$update->message->chat->id = "-125893585";
+		$update->message->chat->id = "";
 		$num = rand(1,139);
 		$fb = fopen('b.txt', 'a');
 		fwrite($fb, $num);
