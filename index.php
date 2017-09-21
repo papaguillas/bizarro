@@ -19,7 +19,7 @@
 require 'vendor/autoload.php';
 $date = date('m/d/Y h:i:s a', time());
 $client = new Zelenin\Telegram\Bot\Api('403600276:AAHaO4z5j96pcSLNuXMyrrxjDqB8OXVn2cY'); // Set your access token
-$url = 'koreanbot.herokuapp.com/'; // URL RSS feed
+$url = 'http://tranquil-refuge-60512.herokuapp.com/'; // URL RSS feed
 $update = json_decode(file_get_contents('php://input'));	
 try {
     date_default_timezone_set('Spain/Madrid');
